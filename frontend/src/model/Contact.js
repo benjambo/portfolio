@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const Resume = () => {
+export const Contact = () => {
   return (
     <div className='content'>
-      <h1>Resume Page</h1>
+      <h1>Contact Page</h1>
     </div>
   )
 }
