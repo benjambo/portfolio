@@ -2,8 +2,8 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
-.content {
-  padding-top: 5vh;
+.all-content {
+  padding-top: 6vh;
 }
 
 /* Landing page */
@@ -65,4 +65,24 @@
   color: white;
   font-size: 3em;
   padding: 10px;
+}
+
+/* Projects Page */
+
+.projects-grid {
+  display: flex;
+}
+
+.grid-width {
+  width: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+  .projects-grid {
+    display: inline;
+  }
+
+  .grid-width {
+    width: auto;
+  }
 }
