@@ -8,7 +8,7 @@
 
 > My Portfolio as a Software Engineer
 
-### ✨ [Website Demo](https://benjambo.github.com/Portfolio)
+### ✨ [Website Demo](https://benjambo.github.io/Portfolio/)
 
 ## Prerequisites:
 
