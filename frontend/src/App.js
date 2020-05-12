@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import { NavigationBar } from './components/NavigationBar'
 import { Home } from './model/Home'
 import { Resume } from './model/Resume'
