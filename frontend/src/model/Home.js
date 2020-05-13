@@ -40,7 +40,7 @@ export const Home = () => {
               >
                 <i className="fa fa-instagram" aria-hidden="true" />
               </a>
-
+              {/* Facebook */}
               <a
                 target="_blank"
                 href="https://facebook.com/benjamin.bowo"

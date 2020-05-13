@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export const NavigationBar = () => {
   return (
     <div className="demo-big-content">
-      <Layout fixedHeader>
+      <Layout>
         <Header className="header-color" title="My Portfolio" scroll>
           <Navigation>
             <Link to="/">Home</Link>

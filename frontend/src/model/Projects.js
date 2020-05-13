@@ -252,7 +252,6 @@ export class Projects extends Component {
   render() {
     return (
       <div className="all-content">
-        <div>
           <Tabs
             activeTab={this.state.activeTab}
             onChange={(tabId) => this.setState({ activeTab: tabId })}
@@ -269,7 +268,6 @@ export class Projects extends Component {
               <div className="content">{this.toggleCategories()}</div>
             </Cell>
           </Grid>
-        </div>
       </div>
     )
   }
