@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import {
   Tabs,
   Tab,
-  Grid,
-  Cell,
   Card,
   CardTitle,
   CardActions,
@@ -130,6 +128,40 @@ export class Projects extends Component {
               <IconButton name="share" />
             </CardMenu>
           </Card>
+          <br />
+            {/* Cup O'Roast */}
+            <Card shadow={3} style={{ margin: 'auto' }}>
+              <CardTitle
+                style={{
+                  color: '#fff',
+                  height: '176px',
+                  background:
+                    'url(https://images.pexels.com/photos/982612/pexels-photo-982612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) center / cover',
+                }}
+              >
+                Cup O'Roast
+              </CardTitle>
+              <CardText style={{ color: 'black' }}>
+                Cup O'Roast is the very first project that I took part in.
+              </CardText>
+              <CardActions border>
+                <Button
+                  target="_blank"
+                  href="https://github.com/Jepu32/ProjectCoffee"
+                >
+                  GitHub
+                </Button>
+                <Button
+                  target="_blank"
+                  href="http://users.metropolia.fi/~benjambo/Projekti/Coffee.html"
+                >
+                  Demo
+                </Button>
+              </CardActions>
+              <CardMenu style={{ color: '#fff' }}>
+                <IconButton name="share" />
+              </CardMenu>
+            </Card>
         </div>
       )
     } else if (this.state.activeTab === 1) {
@@ -170,10 +202,9 @@ export class Projects extends Component {
           </Card>
         </div>
       )
-    } else if (this.state.activeTab === 2) {
+    } /*else if (this.state.activeTab === 2) {
       return (
         <div>
-          {/* Cup O'Roast */}
           <Card shadow={3} style={{ margin: 'auto' }}>
             <CardTitle
               style={{
@@ -208,7 +239,7 @@ export class Projects extends Component {
           </Card>
         </div>
       )
-    } else if (this.state.activeTab === 3) {
+    }*/ else if (this.state.activeTab === 2) {
       return (
         <div>
           {/* Sumwan The Game */}
@@ -260,9 +291,8 @@ export class Projects extends Component {
           onChange={(tabId) => this.setState({ activeTab: tabId })}
           ripple
         >
-          <Tab>React</Tab>
+          <Tab>React & Javascript</Tab>
           <Tab>Java</Tab>
-          <Tab>Javascript</Tab>
           <Tab>Unity</Tab>
         </Tabs>
 

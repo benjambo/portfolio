@@ -6,8 +6,8 @@ export const Contact = () => {
   return (
     <div className="all-content">
       <div className="contact-body">
-        <Grid className="contact-grid">
-          <Cell col={6}>
+        <div className="contact-grid">
+          <div className="contact-div">
             <h2>Benjamin Bowo</h2>
             <img
               src={contactpic}
@@ -23,8 +23,8 @@ export const Contact = () => {
               experience. I’m determined on developing myself and on learning
               new skills.
             </p>
-          </Cell>
-          <Cell col={6}>
+          </div>
+          <div className="contact-div">
             <h2>Contact Me</h2>
             <hr />
             <div className="contact-list">
@@ -52,8 +52,8 @@ export const Contact = () => {
                 </ListItem>
               </List>
             </div>
-          </Cell>
-        </Grid>
+          </div>
+        </div>
       </div>
     </div>
   )
