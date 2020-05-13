@@ -13,6 +13,10 @@ import { SignUp } from './model/SignUp'
 const App = () => {
   return (
     <Router>
+      <div>
+        <br/>
+        <br />
+        <br />
       <NavigationBar />
       <Switch>
         <Route exact path="/" component={Home} />
@@ -23,6 +27,7 @@ const App = () => {
         <Route path="/signin" component={SignIn} />
         <Route path="/signup" component={SignUp} />
       </Switch>
+      </div>
     </Router>
   )
 }
