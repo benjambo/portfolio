@@ -6,6 +6,11 @@
   padding-top: 6vh;
 }
 
+/* NavigationBar */
+.demo-big-content {
+  z-index: 1;
+}
+
 /* Home page */
 
 .header-color {
@@ -25,6 +30,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 2;
 }
 
 .profile-picture {
@@ -70,6 +76,7 @@
 
 .projects-grid {
   display: flex;
+  z-index: 2;
 }
 
 .grid-width {
