@@ -133,7 +133,39 @@ export class Projects extends Component {
     } else if (this.state.activeTab === 1) {
       return (
         <div>
-          <h1>This is Java</h1>
+          {/* iBeet */}
+          <Card shadow={3} style={{ margin: 'auto' }}>
+            <CardTitle
+              style={{
+                color: '#fff',
+                height: '176px',
+                background:
+                  'url(https://images.pexels.com/photos/221210/pexels-photo-221210.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) center / cover',
+              }}
+            >
+              iBeet
+            </CardTitle>
+            <CardText>
+              iBeet is an Android software built with Android Studio and Java.
+              The application is an fitness app that counts your calories based
+              on you weight, height and gender and tracks your activity e.g.
+              your jogging trip
+            </CardText>
+            <CardActions border>
+              <Button target="_blank" href="https://github.com/benjambo/iBeet">
+                GitHub
+              </Button>
+              <Button
+                target="_blank"
+                href="https://drive.google.com/open?id=1OKzLJIzBJRLKhQ6Vbz1Wsp1wR-lX65tp"
+              >
+                Demo
+              </Button>
+            </CardActions>
+            <CardMenu style={{ color: '#fff' }}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
         </div>
       )
     } else if (this.state.activeTab === 2) {
@@ -177,7 +209,41 @@ export class Projects extends Component {
     } else if (this.state.activeTab === 3) {
       return (
         <div>
-          <h1>This is Unity</h1>
+          {/* Sumwan The Game */}
+          <Card shadow={3} style={{ margin: 'auto' }}>
+            <CardTitle
+              style={{
+                color: '#fff',
+                height: '176px',
+                background:
+                  'url(https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) center / cover',
+              }}
+            >
+              Sumwan The Game
+            </CardTitle>
+            <CardText>
+              Sumwan is the first game I was apart of. We built a game using
+              Unity and C#. It's an adventure game where you're supposed to find
+              Sumwan's (The chraracter's) lost socks in a maze.
+            </CardText>
+            <CardActions border>
+              <Button
+                target="_blank"
+                href="https://trello.com/b/BzLJ8w88/sumwans-socks"
+              >
+                Trello
+              </Button>
+              <Button
+                target="_blank"
+                href="https://drive.google.com/open?id=1OKzLJIzBJRLKhQ6Vbz1Wsp1wR-lX65tp"
+              >
+                Demo
+              </Button>
+            </CardActions>
+            <CardMenu style={{ color: '#fff' }}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
         </div>
       )
     }
@@ -199,7 +265,7 @@ export class Projects extends Component {
           </Tabs>
 
           <Grid className="grid-width">
-            <Cell col={12} >
+            <Cell col={12}>
               <div className="content">{this.toggleCategories()}</div>
             </Cell>
           </Grid>

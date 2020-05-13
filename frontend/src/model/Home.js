@@ -4,7 +4,6 @@ import profilepic from '../assets/profilepic.png'
 
 export const Home = () => {
   return (
-    <div className="all-content" style={{ width: '100%', margin: 'auto' }}>
       <Grid className="home-grid">
         <Cell col={12}>
           <img className="profile-picture" alt="profile" src={profilepic} />
@@ -52,6 +51,5 @@ export const Home = () => {
           </div>
         </Cell>
       </Grid>
-    </div>
   )
 }

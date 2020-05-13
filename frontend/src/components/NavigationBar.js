@@ -19,7 +19,7 @@ export const NavigationBar = () => {
           <Navigation>
             <Link to="/">Home</Link>
             <Link to="/resume">Resume</Link>
-            <Link to="/about">Projects</Link>
+            <Link to="/projects">Projects</Link>
             <Link to="/contact">Contact</Link>
             <Link to="/signin">Sign</Link>
           </Navigation>
