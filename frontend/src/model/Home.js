@@ -4,9 +4,9 @@ import profilepic from '../assets/profilepic.png'
 
 export const Home = () => {
   return (
-    <div>
-      <Grid className="home-grid">
-        <Cell col={12}>
+    <div className="all-content">
+      <div className="home-grid">
+        <div>
           <img className="profile-picture" alt="profile" src={profilepic} />
           <div className="banner-text">
             <h1>Full Stack Web Developer</h1>
@@ -50,8 +50,12 @@ export const Home = () => {
               </a>
             </div>
           </div>
-        </Cell>
-      </Grid>
+        </div>
+      </div>
+      <div className="home-second-grid">
+        <p>This is</p>
+        <h2>Hello there my king</h2>
+      </div>
     </div>
   )
 }

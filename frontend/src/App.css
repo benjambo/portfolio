@@ -1,5 +1,5 @@
 * {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier Prime', Courier, monospace;
 }
 
 .all-content {
@@ -14,10 +14,6 @@
 .mdl-layout__title,
 .mdl-layout-title {
   font-family: 'Courier New', Courier, monospace !important;
-}
-
-.demo-big-content {
-  z-index: 2 !important;
 }
 
 /* Home page */
@@ -37,7 +33,11 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 60vh;
+}
+
+.home-second-grid {
+  margin: 57vh 3vh 3vh 3vh;
 }
 
 .profile-picture {
@@ -87,11 +87,6 @@
 
 .grid-width {
   width: 80%;
-  z-index: 1 !important;
-}
-
-.content {
-  z-index: 1 !important;
 }
 
 /* Contact Page */
@@ -120,12 +115,9 @@
 }
 
 .contact-grid h2 {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier Prime', Courier, monospace;
 }
 
-.contact-grid p {
-  font-size: large;
-}
 
 .contact-grid hr {
   border-top: 1px solid black;
@@ -148,10 +140,6 @@
 @media only screen and (max-width: 768px) {
   .projects-grid {
     display: inline !important;
-  }
-
-  .mdl-layout__obfuscator {
-    z-index: 2 !important;
   }
 
   .contact-grid {

@@ -28,7 +28,7 @@ export const Contact = () => {
             <h2>Contact Me</h2>
             <hr />
             <div className="contact-list">
-              <List style={{ fontSize: '3vh', alignContent: 'right' }}>
+              <List style={{ fontSize: '3vh' }}>
                 <ListItem>
                   <ListItemContent
                     icon="contact_phone"

@@ -35,7 +35,7 @@ export class Projects extends Component {
             >
               MovieSurfer
             </CardTitle>
-            <CardText>
+            <CardText style={{ color: 'black' }}>
               MovieSurfer is a project I did at school with a team. The idea was
               to create a website to gather all movies in different theaters to
               one place. MovieSurfer's goal is to bring the prices down on movie
@@ -72,7 +72,7 @@ export class Projects extends Component {
             >
               Perfiction
             </CardTitle>
-            <CardText>
+            <CardText style={{ color: 'black' }}>
               Perfiction is an enthusiastic coffee website where the idea is to
               promote a coffeeshop as a brand and sell their products. This
               project was my first time using React.
@@ -108,7 +108,7 @@ export class Projects extends Component {
             >
               My Portfolio
             </CardTitle>
-            <CardText>
+            <CardText style={{ color: 'black' }}>
               This is a project I created by myself to make myself and portfolio
               of all my work.
             </CardText>
@@ -147,7 +147,7 @@ export class Projects extends Component {
             >
               iBeet
             </CardTitle>
-            <CardText>
+            <CardText style={{ color: 'black' }}>
               iBeet is an Android software built with Android Studio and Java.
               The application is an fitness app that counts your calories based
               on you weight, height and gender and tracks your activity e.g.
@@ -185,7 +185,7 @@ export class Projects extends Component {
             >
               Cup O'Roast
             </CardTitle>
-            <CardText>
+            <CardText style={{ color: 'black' }}>
               Cup O'Roast is the very first project that I took part in.
             </CardText>
             <CardActions border>
@@ -223,7 +223,7 @@ export class Projects extends Component {
             >
               Sumwan The Game
             </CardTitle>
-            <CardText>
+            <CardText style={{ color: 'black' }}>
               Sumwan is the first game I was apart of. We built a game using
               Unity and C#. It's an adventure game where you're supposed to find
               Sumwan's (The chraracter's) lost socks in a maze.

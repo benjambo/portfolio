@@ -6,16 +6,43 @@ export const NavigationBar = () => {
   return (
     <div className="demo-big-content">
       <Layout>
-        <Header className="header-color" title="My Portfolio" scroll>
+        <Header
+          className="header-color"
+          title={
+            <Link
+              style={{
+                textDecoration: 'none',
+                color: 'white',
+                fontSize: 'smaller',
+              }}
+              to="/"
+            >
+              Benjamin Bowo
+            </Link>
+          }
+          scroll
+        >
           <Navigation>
             <Link to="/">Home</Link>
-            <Link to="/resume">Resume</Link>
             <Link to="/projects">Projects</Link>
             <Link to="/contact">Contact</Link>
-            <Link to="/signin">Sign</Link>
+            <Link to="/resume">Resume</Link>
           </Navigation>
         </Header>
-        <Drawer title="My Portfolio">
+        <Drawer
+          title={
+            <Link
+              style={{
+                textDecoration: 'none',
+                color: 'grey',
+                fontSize: 'smaller',
+              }}
+              to="/"
+            >
+              My Portfolio
+            </Link>
+          }
+        >
           <Navigation>
             <Link to="/">Home</Link>
             <Link to="/resume">Resume</Link>
