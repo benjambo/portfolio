@@ -1,9 +1,8 @@
 import React from 'react'
+import resume from '../assets/resume.png'
 
 export const Resume = () => {
   return (
-    <div className='all-content'>
-      <h1>Resume Page</h1>
-    </div>
+      <img className='resume-img' src={resume} />
   )
 }

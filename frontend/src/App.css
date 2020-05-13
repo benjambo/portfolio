@@ -124,6 +124,16 @@
   margin: auto;
 }
 
+/* Resume Page */
+
+.resume-img {
+  padding: 10vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 /* Mobile & Tablet View */
 
 @media only screen and (max-width: 768px) {
@@ -134,4 +144,8 @@
   .grid-width {
     width: auto;
   }
+  .resume-img {
+  padding: 7vh;
+  width: 70%;
+}
 }
