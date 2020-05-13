@@ -59,6 +59,7 @@ export class Projects extends Component {
               <IconButton name="share" />
             </CardMenu>
           </Card>
+          <br />
           {/* Perfiction */}
           <Card shadow={3} style={{ margin: 'auto' }}>
             <CardTitle
@@ -94,6 +95,7 @@ export class Projects extends Component {
               <IconButton name="share" />
             </CardMenu>
           </Card>
+          <br />
           {/* My Portfolio */}
           <Card shadow={3} style={{ margin: 'auto' }}>
             <CardTitle

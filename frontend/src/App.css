@@ -16,6 +16,10 @@
   font-family: 'Courier New', Courier, monospace !important;
 }
 
+.demo-big-content {
+  z-index: 2 !important;
+}
+
 /* Home page */
 
 .header-color {
@@ -83,6 +87,11 @@
 
 .grid-width {
   width: 80%;
+  z-index: 1 !important;
+}
+
+.content {
+  z-index: 1 !important;
 }
 
 /* Contact Page */
@@ -138,14 +147,22 @@
 
 @media only screen and (max-width: 768px) {
   .projects-grid {
-    display: inline;
+    display: inline !important;
+  }
+
+  .mdl-layout__obfuscator {
+    z-index: 2 !important;
+  }
+
+  .contact-grid {
+    display: inline !important;
   }
 
   .grid-width {
     width: auto;
   }
   .resume-img {
-  padding: 7vh;
-  width: 70%;
-}
+    padding: 7vh;
+    width: 70%;
+  }
 }
