@@ -3,7 +3,6 @@
 }
 
 .all-content {
-  padding-top: 6vh;
 }
 
 .mdl-layout__content {
@@ -14,6 +13,10 @@
 .mdl-layout__title,
 .mdl-layout-title {
   font-family: 'Courier New', Courier, monospace !important;
+}
+
+.demo-big-content {
+  display: block;
 }
 
 /* Home page */
@@ -29,15 +32,12 @@
   background: -webkit-linear-gradient(to right, #434343, #000000);
   background: linear-gradient(to right, #434343, #000000);
   text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 60vh;
 }
 
 .home-second-grid {
-  margin: 57vh 3vh 3vh 3vh;
+  margin: 3vh 3vh 3vh 3vh;
 }
 
 .profile-picture {
@@ -86,7 +86,11 @@
 }
 
 .grid-width {
-  width: 80%;
+  margin: 6vh 0vh 3vh 0vh;
+}
+
+.project-tabs {
+  padding-top: 6vh;
 }
 
 /* Contact Page */

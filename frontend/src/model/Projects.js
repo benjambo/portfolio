@@ -253,23 +253,22 @@ export class Projects extends Component {
 
   render() {
     return (
-      <div className="all-content">
-          <Tabs
-            activeTab={this.state.activeTab}
-            onChange={(tabId) => this.setState({ activeTab: tabId })}
-            ripple
-          >
-            <Tab>React</Tab>
-            <Tab>Java</Tab>
-            <Tab>Javascript</Tab>
-            <Tab>Unity</Tab>
-          </Tabs>
+      <div>
+        <Tabs
+          className="project-tabs"
+          activeTab={this.state.activeTab}
+          onChange={(tabId) => this.setState({ activeTab: tabId })}
+          ripple
+        >
+          <Tab>React</Tab>
+          <Tab>Java</Tab>
+          <Tab>Javascript</Tab>
+          <Tab>Unity</Tab>
+        </Tabs>
 
-          <Grid className="grid-width">
-            <Cell col={12}>
-              <div className="content">{this.toggleCategories()}</div>
-            </Cell>
-          </Grid>
+        <div className="grid-width">
+          <div className="content">{this.toggleCategories()}</div>
+        </div>
       </div>
     )
   }
