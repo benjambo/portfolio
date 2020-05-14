@@ -1,33 +1,54 @@
 * {
-  font-family: 'Courier Prime', Courier, monospace;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.mdl-layout__content {
+/*.mdl-layout__content {
   flex-grow: 0 !important;
 }
+
+.mdl-layout {
+  position: initial !important;
+}*/
 
 /* Navigation Bar */
 .mdl-layout__title,
 .mdl-layout-title {
-  font-family: 'Courier New', Courier, monospace !important;
+  font-family: 'Montserrat', sans-serif !important;
+  color: black !important;
 }
 
-.demo-big-content {
+/* .demo-big-content {
   display: block;
+  position: sticky;
 }
+
+.mdl-layout__drawer {
+  position: fixed !important;
+}
+
+.mdl-layout__obfuscator {
+  position: fixed !important;
+} */
 
 /* Home page */
 
 .header-color {
-  background: #000000;
+  /*background: #000000;
   background: -webkit-linear-gradient(to right, #434343, #000000);
-  background: linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);*/
+  background: #ec6f66;
+  background: -webkit-linear-gradient(to right, #f3a183, #ec6f66);
+  background: linear-gradient(to right, #f3a183, #ec6f66);
 }
 
 .home-grid {
-  background: #000000;
+  /*background: #000000;
   background: -webkit-linear-gradient(to right, #434343, #000000);
-  background: linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);*/
+  background: #ec6f66;
+  background: -webkit-linear-gradient(to right, #f3a183, #ec6f66);
+  background: linear-gradient(to right, #f3a183, #ec6f66);
+
   text-align: center;
   padding: 3vh 0vh 3vh 0vh;
 }
@@ -49,7 +70,7 @@
 
 .banner-text h1 {
   color: white;
-  font-family: 'Courier New', Courier, monospace !important;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .banner-text hr {
@@ -136,14 +157,63 @@
   width: 50%;
 }
 
+.resume-grid {
+  display: flex;
+}
+
+.resume-column-left {
+  text-align: center;
+  justify-content: center;
+  padding: 10vh;
+  width: 33%;
+}
+
+.resume-column-right {
+  padding: 2vh;
+  border-radius: 10px;
+  margin: 8vh;
+  width: 66%;
+  color: white;
+  /*background-color: navajowhite;*/
+  background: #ec6f66;
+  background: -webkit-linear-gradient(to right, #f08d78, #ec6f66);
+  background: linear-gradient(to right, #f08d78, #ec6f66);
+}
+
+.resume-grid h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Education Component */
+
+.exp-grid {
+  display: flex;
+}
+
+.exp-left {
+  width: 33%;
+}
+
+.exp-right {
+  width: 66%;
+}
+
 /* Mobile & Tablet View */
 
 @media only screen and (max-width: 1350px) {
-
   /* Project Page */
 
   .projects-grid {
     display: inline !important;
+  }
+
+  .mdl-layout__inner-container {
+    overflow: hidden !important;
+    overflow-y: hidden !important;
+  }
+
+  .mdl-layout__drawer {
+    position: fixed !important;
   }
 
   /* Contact Page */

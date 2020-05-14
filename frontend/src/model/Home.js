@@ -1,5 +1,4 @@
 import React from 'react'
-import { Grid, Cell } from 'react-mdl'
 import profilepic from '../assets/profilepic.png'
 
 export const Home = () => {

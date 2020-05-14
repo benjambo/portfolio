@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl'
+import { List, ListItem, ListItemContent } from 'react-mdl'
 import contactpic from '../assets/contactpic.jpeg'
 
 export const Contact = () => {
@@ -8,7 +8,7 @@ export const Contact = () => {
       <div className="contact-body">
         <div className="contact-grid">
           <div className="contact-div">
-            <h2>Benjamin Bowo</h2>
+            <h2 style={{ fontFamily: 'Montserrat' }}>Benjamin Bowo</h2>
             <img
               src={contactpic}
               alt="avatar"
@@ -25,7 +25,7 @@ export const Contact = () => {
             </p>
           </div>
           <div className="contact-div">
-            <h2>Contact Me</h2>
+            <h2 style={{ fontFamily: 'Montserrat' }}>Contact Me</h2>
             <hr />
             <div className="contact-list">
               <List style={{ fontSize: '3vh' }}>

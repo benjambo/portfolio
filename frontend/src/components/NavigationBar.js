@@ -34,7 +34,7 @@ export const NavigationBar = () => {
             <Link
               style={{
                 textDecoration: 'none',
-                color: 'grey',
+                color: 'black',
                 fontSize: 'smaller',
               }}
               to="/"
@@ -44,10 +44,18 @@ export const NavigationBar = () => {
           }
         >
           <Navigation>
-            <Link to="/">Home</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/contact">Contact</Link>
-            <Link to="/resume">Resume</Link>
+            <Link style={{ color: 'black' }} to="/">
+              Home
+            </Link>
+            <Link style={{ color: 'black' }} to="/projects">
+              Projects
+            </Link>
+            <Link style={{ color: 'black' }} to="/contact">
+              Contact
+            </Link>
+            <Link style={{ color: 'black' }} to="/resume">
+              Resume
+            </Link>
           </Navigation>
         </Drawer>
         <Content>
