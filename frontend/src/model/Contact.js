@@ -4,7 +4,7 @@ import contactpic from '../assets/contactpic.jpeg'
 
 export const Contact = () => {
   return (
-    <div className="all-content">
+    <div>
       <div className="contact-body">
         <div className="contact-grid">
           <div className="contact-div">
