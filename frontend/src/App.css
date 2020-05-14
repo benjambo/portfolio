@@ -28,7 +28,7 @@
 
 .mdl-layout__obfuscator {
   position: fixed !important;
-} 
+}
 
 /* Home page */
 
@@ -81,16 +81,17 @@
 
 .banner-text p {
   color: white;
-  padding: 1em;
+  padding: 1vh;
+  margin: 0vh;
 }
 
-.social-links {
+.social-links-home {
   justify-content: space-between;
   width: 100%;
   margin: auto;
 }
 
-.social-links i {
+.social-links-home i {
   color: white;
   font-size: 3em;
   padding: 1vh 4vh 1vh 4vh;
@@ -156,6 +157,18 @@
   width: 50%;
 }
 
+.social-links-resume {
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+
+.social-links-resume i {
+  color: white;
+  font-size: 3em;
+  padding: 1vh 3vh 1vh 3vh;
+}
+
 .resume-grid {
   display: flex;
 }
@@ -183,7 +196,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-/* Education Component */
+/* Experience Component */
 
 .exp-grid {
   display: flex;
@@ -200,7 +213,34 @@
 /* Mobile & Tablet View */
 
 @media only screen and (max-width: 1350px) {
+  .mdl-layout {
+    position: absolute !important;
+  }
+
+  /* Home Page */
+
+  .banner-text {
+    width: 100%;
+  }
+
+  .banner-text hr {
+    width: 95%;
+    margin: auto;
+  }
+
+  .banner-text p {
+    padding: 2vh;
+  }
+
+  .banner-text h1 {
+    padding: 2vh;
+  }
+
   /* Project Page */
+
+  .project-tabs {
+    padding-top: 6vh;
+  }
 
   .projects-grid {
     display: inline !important;
@@ -232,8 +272,72 @@
 
   /* Resume Page */
 
-  .resume-img {
+  /*.resume-img {
     padding: 7vh;
     width: 70%;
+  }*/
+
+  .resume-grid {
+    display: inline;
+  }
+
+  .resume-column-left {
+    width: 100%;
+    padding: 7vh 0vh 0vh 0vh;
+    margin: 0vh;
+  }
+
+  .resume-column-right {
+    border-radius: 0px;
+    padding: 1vh 0vh 0vh 0vh;
+    margin: 0vh;
+    width: 100%;
+    text-align: center;
+  }
+
+  .resume-column-left p {
+    padding: 2vh;
+    margin: 0vh;
+  }
+
+  .resume-column-left hr {
+    width: 95%;
+    margin: auto;
+  }
+
+  .resume-column-left h5 {
+    margin: 0vh;
+    padding: 2vh 2vh 0vh 2vh;
+  }
+
+  .resume-column-right p {
+    padding: 1vh;
+  }
+
+  .resume-column-right h5 {
+    padding: 1vh;
+  }
+
+  .resume-column-right hr {
+    width: 95%;
+    margin: auto;
+  }
+
+  .social-links-resume i {
+    margin: 2vh 0vh;
+  }
+
+  /* Experience Component */
+
+  .exp-grid {
+    display: flex;
+  }
+
+  .exp-left {
+    width: 35%;
+  }
+
+  .exp-right {
+    width: 65%;
   }
 }

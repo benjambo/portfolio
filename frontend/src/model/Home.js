@@ -14,14 +14,14 @@ export const Home = () => {
               Javascript | React | NodeJS | Express | MongoDB | HTML & CSS |
               Java
             </p>
-            <div className="social-links">
+            <div className="social-links-home">
               {/* Github */}
               <a
                 target="_blank"
                 href="https://github.com/benjambo"
                 rel="noopener noreferrer"
               >
-                <i className="fa fa-github-square" aria-hidden="true" />
+                <i className="fab fa-github-square" aria-hidden="true" />
               </a>
               {/* LinkedIn */}
               <a
@@ -29,7 +29,7 @@ export const Home = () => {
                 href="https://linkedin.com/in/benjaminbowo"
                 rel="noopener noreferrer"
               >
-                <i className="fa fa-linkedin-square" aria-hidden="true" />
+                <i className="fab fa-linkedin-square" aria-hidden="true" />
               </a>
               {/* Instagram */}
               <a
@@ -37,7 +37,7 @@ export const Home = () => {
                 href="https://instagram.com/benjaminjoshin"
                 rel="noopener noreferrer"
               >
-                <i className="fa fa-instagram" aria-hidden="true" />
+                <i className="fab fa-instagram" aria-hidden="true" />
               </a>
               {/* Facebook */}
               <a
@@ -45,7 +45,7 @@ export const Home = () => {
                 href="https://facebook.com/benjamin.bowo"
                 rel="noopener noreferrer"
               >
-                <i className="fa fa-facebook-square" aria-hidden="true" />
+                <i className="fab fa-facebook-square" aria-hidden="true" />
               </a>
             </div>
           </div>
