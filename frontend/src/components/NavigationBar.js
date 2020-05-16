@@ -1,6 +1,6 @@
 import React from 'react'
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl'
-import { Link } from 'react-router-dom'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export const NavigationBar = () => {
   return (
@@ -9,53 +9,59 @@ export const NavigationBar = () => {
         <Header
           className="header-color"
           title={
-            <Link
+            <AnchorLink
               style={{
                 textDecoration: 'none',
                 color: 'white',
                 fontSize: 'smaller',
               }}
-              to="/"
+              offset="100"
+              href="#home"
             >
               Benjamin Bowo
-            </Link>
+            </AnchorLink>
           }
           scroll
         >
           <Navigation>
-            <Link to="/">Home</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/contact">Contact</Link>
-            <Link to="/resume">Resume</Link>
+            <AnchorLink offset="100" href="#home">
+              Home
+            </AnchorLink>
+            <AnchorLink href="#projects">Projects</AnchorLink>
+            <AnchorLink href="#resume">Resume</AnchorLink>
           </Navigation>
         </Header>
         <Drawer
           title={
-            <Link
+            <AnchorLink
               style={{
                 textDecoration: 'none',
                 color: 'black',
                 fontSize: 'smaller',
               }}
-              to="/"
+              offset="100"
+              href="#home"
             >
               My Portfolio
-            </Link>
+            </AnchorLink>
           }
         >
           <Navigation>
-            <Link style={{ color: 'black' }} to="/">
+            <AnchorLink
+              offset="100"
+              href="#home"
+              style={{
+                color: 'black',
+              }}
+            >
               Home
-            </Link>
-            <Link style={{ color: 'black' }} to="/projects">
+            </AnchorLink>
+            <AnchorLink style={{ color: 'black' }} href="#projects">
               Projects
-            </Link>
-            <Link style={{ color: 'black' }} to="/contact">
-              Contact
-            </Link>
-            <Link style={{ color: 'black' }} to="/resume">
+            </AnchorLink>
+            <AnchorLink style={{ color: 'black' }} href="#resume">
               Resume
-            </Link>
+            </AnchorLink>
           </Navigation>
         </Drawer>
         <Content>

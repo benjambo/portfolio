@@ -2,6 +2,7 @@ import React from 'react'
 //import resume from '../assets/resume.png'
 import contactpic from '../assets/contactpic.jpeg'
 import { Experiences } from '../components/Experiences'
+import { Random } from 'react-animated-text'
 
 //<img className='resume-img' src={resume} />
 
@@ -135,6 +136,25 @@ export const Resume = () => {
           place={'Customer Service / Lifeguard, Urheiluhallit Oy'}
           description={'Customer service and security'}
         />
+        <br />
+        <hr style={{ borderTop: '1px solid white' }}></hr>
+        <h3 style={{ fontFamily: 'Montserrat' }}>Skills</h3>
+        <h5
+          style={{
+            fontWeight: 'bold',
+            textAlign: 'center',
+            letterSpacing: '0.3em',
+            lineHeight: '200%',
+            margin: '0'
+          }}
+        >
+          <Random
+            text="Java • JavaScript • ReactJS • SQL • HTML & CSS"
+            effect="jump"
+            effectChange={0.2}
+            effectDuration={0.5}
+          />
+        </h5>
       </div>
     </div>
   )

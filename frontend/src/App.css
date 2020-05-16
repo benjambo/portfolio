@@ -17,10 +17,11 @@
   color: black !important;
 }
 
-/* .demo-big-content {
-  display: block;
-  position: sticky;
-} */
+.demo-big-content {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
 
 .mdl-layout__drawer {
   position: fixed !important;
@@ -50,7 +51,7 @@
   background: linear-gradient(to right, #f3a183, #ec6f66);
 
   text-align: center;
-  padding: 3vh 0vh 3vh 0vh;
+  padding: 8vh 0vh 3vh 0vh;
 }
 
 .home-second-grid {
@@ -58,8 +59,7 @@
 }
 
 .profile-picture {
-  height: 25vh;
-  /*padding-top: 5vh;*/
+  width: 25vh;
 }
 
 .banner-text {
@@ -106,10 +106,6 @@
 .grid-width {
   margin: 6vh 0vh 3vh 0vh;
 }
-
-/*.project-tabs {
-  padding-top: 6vh;
-}*/
 
 /* Contact Page */
 
@@ -210,14 +206,35 @@
   width: 66%;
 }
 
+/* Fade in Text */
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
 /* Mobile & Tablet View */
 
 @media only screen and (max-width: 1350px) {
   .mdl-layout {
     position: absolute !important;
+    height: 50px !important;
   }
 
   /* Home Page */
+
+  .demo-big-content {
+    position: static;
+  }
 
   .banner-text {
     width: 100%;
@@ -271,11 +288,6 @@
   }
 
   /* Resume Page */
-
-  /*.resume-img {
-    padding: 7vh;
-    width: 70%;
-  }*/
 
   .resume-grid {
     display: inline;
@@ -339,5 +351,15 @@
 
   .exp-right {
     width: 65%;
+  }
+
+  .exp-right h5 {
+    padding: 2vh;
+  }
+
+  /* Fade in Text */
+
+  .fade-in-section {
+    transition: opacity 0.6s ease-out, transform 0.4s ease-out;
   }
 }
