@@ -1,12 +1,13 @@
 import React from 'react'
 import profilepic from '../assets/profilepic.png'
 import { Resume } from './Resume'
-import { FadeInSection } from '../components/FadeInSection'
 import { Projects } from './Projects'
+import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
 
 export const Home = () => {
+  let parallax
   return (
-    <div className="all-content">
+    <div>
       <div className="home-grid">
         <div>
           <section id="home">
@@ -33,7 +34,7 @@ export const Home = () => {
                   href="https://linkedin.com/in/benjaminbowo"
                   rel="noopener noreferrer"
                 >
-                  <i className="fab fa-linkedin-square" aria-hidden="true" />
+                  <i className="fab fa-linkedin" aria-hidden="true" />
                 </a>
                 {/* Instagram */}
                 <a
@@ -56,36 +57,52 @@ export const Home = () => {
           </section>
         </div>
       </div>
+
       <div className="home-second-grid">
-          <p>
-            "On the other hand, we denounce with righteous indignation and
-            dislike men who are so beguiled and demoralized by the charms of
-            pleasure of the moment, so blinded by desire, that they cannot
-            foresee the pain and trouble that are bound to ensue; and equal
-            blame belongs to those who fail in their duty through weakness of
-            will, which is the same as saying through shrinking from toil and
-            pain. These cases are perfectly simple and easy to distinguish. In a
-            free hour, when our power of choice is untrammelled and when nothing
-            prevents our being able to do what we like best, every pleasure is
-            to be welcomed and every pain avoided. But in certain circumstances
-            and owing to the claims of duty or the obligations of business it
-            will frequently occur that pleasures have to be repudiated and
-            annoyances accepted. The wise man therefore always holds in these
-            matters to this principle of selection: he rejects pleasures to
-            secure other greater pleasures, or else he endures pains to avoid
-            worse pains."
-          </p>
+        <p className="qoutes">
+          The test of the machine is the satisfaction it gives you. There isn't
+          any other test. If the machine produces tranquility it's right. If it
+          disturbs you it's wrong until either the machine or your mind is
+          changed.”
+        </p>
       </div>
+
       <section id="projects">
-        <FadeInSection>
-          <Projects />
-        </FadeInSection>
+        <Projects />
       </section>
+      <div className="home-second-grid">
+        <br />
+        <br />
+        <p className="qoutes">
+          “The computer programmer is a creator of universes for which he alone
+          is the lawgiver. No playwright, no stage director, no emperor, however
+          powerful, has ever exercised such absolute authority to arrange a
+          stage or field of battle and to command such unswervingly dutiful
+          actors or troops.”
+        </p>
+      </div>
       <section id="resume">
-        <FadeInSection>
-          <Resume />
-        </FadeInSection>
+        <Resume />
       </section>
+      <div className="home-second-grid">
+        <p className="qoutes">
+          "On the other hand, we denounce with righteous indignation and dislike
+          men who are so beguiled and demoralized by the charms of pleasure of
+          the moment, so blinded by desire, that they cannot foresee the pain
+          and trouble that are bound to ensue; and equal blame belongs to those
+          who fail in their duty through weakness of will, which is the same as
+          saying through shrinking from toil and pain. These cases are perfectly
+          simple and easy to distinguish. In a free hour, when our power of
+          choice is untrammelled and when nothing prevents our being able to do
+          what we like best, every pleasure is to be welcomed and every pain
+          avoided. But in certain circumstances and owing to the claims of duty
+          or the obligations of business it will frequently occur that pleasures
+          have to be repudiated and annoyances accepted. The wise man therefore
+          always holds in these matters to this principle of selection: he
+          rejects pleasures to secure other greater pleasures, or else he
+          endures pains to avoid worse pains."
+        </p>
+      </div>
     </div>
   )
 }

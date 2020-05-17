@@ -10,7 +10,6 @@ import {
   IconButton,
   CardText,
 } from 'react-mdl'
-import { FadeInSection } from '../components/FadeInSection'
 
 export class Projects extends Component {
   constructor(props) {
@@ -23,8 +22,7 @@ export class Projects extends Component {
       return (
         <div className="projects-grid">
           {/* MovieSurfer */}
-          <Card shadow={3} style={{ margin: 'auto' }}>
-            <FadeInSection>
+          <Card className='cards' shadow={3} style={{ margin: 'auto' }}>
               <CardTitle
                 style={{
                   color: '#fff',
@@ -58,12 +56,10 @@ export class Projects extends Component {
               <CardMenu style={{ color: '#fff' }}>
                 <IconButton name="share" />
               </CardMenu>
-            </FadeInSection>
           </Card>
           <br />
           {/* Perfiction */}
-          <Card shadow={3} style={{ margin: 'auto' }}>
-            <FadeInSection>
+          <Card className='cards' shadow={3} style={{ margin: 'auto' }}>
               <CardTitle
                 style={{
                   color: '#fff',
@@ -96,12 +92,10 @@ export class Projects extends Component {
               <CardMenu style={{ color: '#fff' }}>
                 <IconButton name="share" />
               </CardMenu>
-            </FadeInSection>
           </Card>
           <br />
           {/* My Portfolio */}
-          <Card shadow={3} style={{ margin: 'auto' }}>
-            <FadeInSection>
+          <Card className='cards' shadow={3} style={{ margin: 'auto' }}>
               <CardTitle
                 style={{
                   color: '#fff',
@@ -133,12 +127,10 @@ export class Projects extends Component {
               <CardMenu style={{ color: '#fff' }}>
                 <IconButton name="share" />
               </CardMenu>
-            </FadeInSection>
           </Card>
           <br />
           {/* Cup O'Roast */}
-          <Card shadow={3} style={{ margin: 'auto' }}>
-            <FadeInSection>
+          <Card className='cards' shadow={3} style={{ margin: 'auto' }}>
               <CardTitle
                 style={{
                   color: '#fff',
@@ -169,7 +161,6 @@ export class Projects extends Component {
               <CardMenu style={{ color: '#fff' }}>
                 <IconButton name="share" />
               </CardMenu>
-            </FadeInSection>
           </Card>
           <br />
         </div>
@@ -178,8 +169,7 @@ export class Projects extends Component {
       return (
         <div>
           {/* iBeet */}
-          <Card shadow={3} style={{ margin: 'auto' }}>
-            <FadeInSection>
+          <Card className='cards' shadow={3} style={{ margin: 'auto' }}>
               <CardTitle
                 style={{
                   color: '#fff',
@@ -213,7 +203,6 @@ export class Projects extends Component {
               <CardMenu style={{ color: '#fff' }}>
                 <IconButton name="share" />
               </CardMenu>
-            </FadeInSection>
           </Card>
           <br />
         </div>
@@ -261,8 +250,7 @@ export class Projects extends Component {
       return (
         <div>
           {/* Sumwan The Game */}
-          <Card shadow={3} style={{ margin: 'auto' }}>
-            <FadeInSection>
+          <Card className='cards' shadow={3} style={{ margin: 'auto' }}>
               <CardTitle
                 style={{
                   color: '#fff',
@@ -295,7 +283,6 @@ export class Projects extends Component {
               <CardMenu style={{ color: '#fff' }}>
                 <IconButton name="share" />
               </CardMenu>
-            </FadeInSection>
           </Card>
           <br />
         </div>
@@ -312,9 +299,9 @@ export class Projects extends Component {
           onChange={(tabId) => this.setState({ activeTab: tabId })}
           ripple
         >
-          <Tab>React & Javascript</Tab>
-          <Tab>Java</Tab>
-          <Tab>Unity</Tab>
+          <Tab className='tabs'>React & Javascript</Tab>
+          <Tab className='tabs'>Java</Tab>
+          <Tab className='tabs'>Unity</Tab>
         </Tabs>
 
         <div className="grid-width">
