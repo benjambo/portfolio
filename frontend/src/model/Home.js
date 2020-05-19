@@ -2,60 +2,56 @@ import React from 'react'
 import profilepic from '../assets/profilepic.png'
 import { Resume } from './Resume'
 import { Projects } from './Projects'
-import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
 
 export const Home = () => {
-  let parallax
   return (
     <div>
       <div className="home-grid">
-        <div>
-          <section id="home">
-            <img className="profile-picture" alt="profile" src={profilepic} />
-            <div className="banner-text">
-              <h1>Full Stack Web Developer</h1>
-              <hr />
-              <p>
-                Javascript | React | NodeJS | Express | MongoDB | HTML & CSS |
-                Java
-              </p>
-              <div className="social-links-home">
-                {/* Github */}
-                <a
-                  target="_blank"
-                  href="https://github.com/benjambo"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-github-square" aria-hidden="true" />
-                </a>
-                {/* LinkedIn */}
-                <a
-                  target="_blank"
-                  href="https://linkedin.com/in/benjaminbowo"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-linkedin" aria-hidden="true" />
-                </a>
-                {/* Instagram */}
-                <a
-                  target="_blank"
-                  href="https://instagram.com/benjaminjoshin"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-instagram" aria-hidden="true" />
-                </a>
-                {/* Facebook */}
-                <a
-                  target="_blank"
-                  href="https://facebook.com/benjamin.bowo"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-facebook-square" aria-hidden="true" />
-                </a>
-              </div>
+        <section id="home">
+          <img className="profile-picture" alt="profile" src={profilepic} />
+          <div className="banner-text">
+            <h1>Full Stack Web Developer</h1>
+            <hr />
+            <p>
+              Javascript | React | NodeJS | Express | MongoDB | HTML & CSS |
+              Java
+            </p>
+            <div className="social-links-home">
+              {/* Github */}
+              <a
+                target="_blank"
+                href="https://github.com/benjambo"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-github-square" aria-hidden="true" />
+              </a>
+              {/* LinkedIn */}
+              <a
+                target="_blank"
+                href="https://linkedin.com/in/benjaminbowo"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-linkedin" aria-hidden="true" />
+              </a>
+              {/* Instagram */}
+              <a
+                target="_blank"
+                href="https://instagram.com/benjaminjoshin"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-instagram" aria-hidden="true" />
+              </a>
+              {/* Facebook */}
+              <a
+                target="_blank"
+                href="https://facebook.com/benjamin.bowo"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-facebook-square" aria-hidden="true" />
+              </a>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
 
       <div className="home-second-grid">
