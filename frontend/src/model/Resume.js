@@ -1,11 +1,8 @@
 import React from 'react'
-//import resume from '../assets/resume.png'
 import contactpic from '../assets/contactpic.jpeg'
 import { Experiences } from '../components/Experiences'
 import { Random } from 'react-animated-text'
 import { FadeInSection } from '../components/FadeInSection'
-
-//<img className='resume-img' src={resume} />
 
 export const Resume = () => {
   return (

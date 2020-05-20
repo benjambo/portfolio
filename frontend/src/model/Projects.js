@@ -10,6 +10,7 @@ import {
   IconButton,
   CardText,
 } from 'react-mdl'
+//import { Spring } from 'react-spring/renderprops'
 
 export class Projects extends Component {
   constructor(props) {

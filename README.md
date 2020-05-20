@@ -1,14 +1,14 @@
 <h1 align="center">Welcome to My Portfolio 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/benjambo/MovieSurfer" target="_blank">
+  <a href="https://github.com/benjambo/portfolio" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
 </p>
 
 > My Portfolio as a Software Engineer
 
-### ✨ [Website Demo](https://benjambo.github.io/Portfolio/)
+### ✨ [Website Demo](https://benjambo.github.io/portfolio/)
 
 ## Prerequisites:
 

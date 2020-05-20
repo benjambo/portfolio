@@ -2,6 +2,8 @@ import React from 'react'
 import profilepic from '../assets/profilepic.png'
 import { Resume } from './Resume'
 import { Projects } from './Projects'
+import { Spring } from 'react-spring/renderprops'
+
 
 export const Home = () => {
   return (
@@ -55,12 +57,21 @@ export const Home = () => {
       </div>
 
       <div className="home-second-grid">
-        <p className="qoutes">
-          The test of the machine is the satisfaction it gives you. There isn't
-          any other test. If the machine produces tranquility it's right. If it
-          disturbs you it's wrong until either the machine or your mind is
-          changed.”
-        </p>
+        <Spring
+          from={{ opacity: 0 }}
+          to={{ opacity: 1 }}
+          config={{ duration: 800 }}
+        >
+          {(props) => (
+            <div className="qoutes" style={props}>
+              The test of the machine is the satisfaction it gives you. There
+              isn't any other test. If the machine produces tranquility it's
+              right. If it disturbs you it's wrong until either the machine or
+              your mind is changed.”
+            </div>
+          )}
+        </Spring>
+        <p className="qoutes"></p>
       </div>
 
       <section id="projects">
