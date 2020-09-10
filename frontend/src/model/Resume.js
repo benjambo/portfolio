@@ -33,7 +33,7 @@ export const Resume = () => {
           <h5>Phone</h5>
           <p>+358 40 9656771</p>
           <h5>Email</h5>
-          <p>ben.bowo@gmail.com</p>
+          <p>beni.schelling@gmail.com</p>
           <h5>Address</h5>
           <p>Uutiskatu 3 C 136, Helsinki</p>
           <hr style={{ borderTop: '1px solid black' }}></hr>
