@@ -3,7 +3,7 @@ import profilepic from '../assets/profilepic.png'
 import { Resume } from './Resume'
 import { Projects } from './Projects'
 import { Spring } from 'react-spring/renderprops'
-
+//import video from '../assets/video.mp4'
 
 export const Home = () => {
   return (
@@ -30,7 +30,7 @@ export const Home = () => {
               {/* LinkedIn */}
               <a
                 target="_blank"
-                href="https://linkedin.com/in/benjaminbowo"
+                href="https://linkedin.com/in/benschelling"
                 rel="noopener noreferrer"
               >
                 <i className="fab fa-linkedin" aria-hidden="true" />
@@ -46,7 +46,7 @@ export const Home = () => {
               {/* Facebook */}
               <a
                 target="_blank"
-                href="https://facebook.com/benjamin.bowo"
+                href="https://facebook.com/ben.schelling"
                 rel="noopener noreferrer"
               >
                 <i className="fab fa-facebook-square" aria-hidden="true" />
@@ -64,10 +64,8 @@ export const Home = () => {
         >
           {(props) => (
             <div className="qoutes" style={props}>
-              The test of the machine is the satisfaction it gives you. There
-              isn't any other test. If the machine produces tranquility it's
-              right. If it disturbs you it's wrong until either the machine or
-              your mind is changed.”
+              Welcome to my Portfolio. Feel free to browse through my projects
+              beneath the tabs down below.
             </div>
           )}
         </Spring>
@@ -81,35 +79,18 @@ export const Home = () => {
         <br />
         <br />
         <p className="qoutes">
-          “The computer programmer is a creator of universes for which he alone
-          is the lawgiver. No playwright, no stage director, no emperor, however
-          powerful, has ever exercised such absolute authority to arrange a
-          stage or field of battle and to command such unswervingly dutiful
-          actors or troops.”
+          Contact info and more about myself further below
         </p>
       </div>
       <section id="resume">
         <Resume />
       </section>
-      <div className="home-second-grid">
-        <p className="qoutes">
-          "On the other hand, we denounce with righteous indignation and dislike
-          men who are so beguiled and demoralized by the charms of pleasure of
-          the moment, so blinded by desire, that they cannot foresee the pain
-          and trouble that are bound to ensue; and equal blame belongs to those
-          who fail in their duty through weakness of will, which is the same as
-          saying through shrinking from toil and pain. These cases are perfectly
-          simple and easy to distinguish. In a free hour, when our power of
-          choice is untrammelled and when nothing prevents our being able to do
-          what we like best, every pleasure is to be welcomed and every pain
-          avoided. But in certain circumstances and owing to the claims of duty
-          or the obligations of business it will frequently occur that pleasures
-          have to be repudiated and annoyances accepted. The wise man therefore
-          always holds in these matters to this principle of selection: he
-          rejects pleasures to secure other greater pleasures, or else he
-          endures pains to avoid worse pains."
-        </p>
-      </div>
     </div>
   )
 }
+
+/*
+<video autoPlay="autoplay" muted loop="loop" className="myVideo">
+<source className="myVideo" src={video} type="video/mp4" />
+</video>
+*/

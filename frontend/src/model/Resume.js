@@ -16,7 +16,7 @@ export const Resume = () => {
               style={{ height: '200px', borderRadius: '10px' }}
             />
           </div>
-          <h2 style={{ fontFamily: 'Montserrat' }}>Benjamin Bowo</h2>
+          <h2 style={{ fontFamily: 'Montserrat' }}>Benjamin Schelling</h2>
           <h4 style={{ fontFamily: 'Montserrat' }}>
             Software Engineer Student
           </h4>
@@ -53,7 +53,7 @@ export const Resume = () => {
             {/* LinkedIn */}
             <a
               target="_blank"
-              href="https://linkedin.com/in/benjaminbowo"
+              href="https://linkedin.com/in/benschelling"
               rel="noopener noreferrer"
             >
               <i
@@ -77,7 +77,7 @@ export const Resume = () => {
             {/* Facebook */}
             <a
               target="_blank"
-              href="https://facebook.com/benjamin.bowo"
+              href="https://facebook.com/beni.schelling"
               rel="noopener noreferrer"
             >
               <i

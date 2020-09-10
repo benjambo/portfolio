@@ -18,7 +18,7 @@ export const NavigationBar = () => {
               offset="100"
               href="#home"
             >
-              Benjamin Bowo
+              Benjamin Schelling
             </AnchorLink>
           }
           scroll
