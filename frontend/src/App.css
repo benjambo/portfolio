@@ -83,6 +83,7 @@ html {
   color: white;
   padding: 1vh;
   margin: 0vh;
+  font-weight: bold;
 }
 
 .social-links-home {
@@ -117,6 +118,10 @@ html {
 
 .cards {
   transition: transform 0.5s;
+}
+
+.cards {
+  font-weight: bold;
 }
 
 .cards:hover {
@@ -192,6 +197,22 @@ html {
 
 .resume-grid {
   display: flex;
+}
+
+.resume-grid p {
+  font-weight: bold;
+}
+
+.resume-grid h5 {
+  font-weight: bold;
+}
+
+.resume-grid h4 {
+  font-weight: bold;
+}
+
+.resume-grid h3 {
+  font-weight: bold;
 }
 
 .resume-column-left {

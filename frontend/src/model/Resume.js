@@ -22,12 +22,13 @@ export const Resume = () => {
           </h4>
           <hr style={{ borderTop: '1px solid black' }}></hr>
           <p>
-            I’m a 23 year old software engineering student. I have a high
-            interest in IT and love working among technology. During my studies,
-            I have got to learn Java, JavaScript, ReactJS, SQL, HTML and CSS on
-            strong bases and minor knowledge in C and C#. I want to start
-            working in an IT company to promote my knowledge and experience. I’m
-            determined on developing myself and on learning new skills.
+              I’m a 23 year old software engineering student. I have a high
+              interest in IT and love working among technology. During my
+              studies, I have got to learn Java, JavaScript, ReactJS, SQL, HTML
+              and CSS on strong bases and minor knowledge in C and C#. I want to
+              start working in an IT company to promote my knowledge and
+              experience. I’m determined on developing myself and on learning
+              new skills.
           </p>
           <hr style={{ borderTop: '1px solid black' }}></hr>
           <h5>Phone</h5>

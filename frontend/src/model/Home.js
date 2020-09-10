@@ -12,7 +12,7 @@ export const Home = () => {
         <section id="home">
           <img className="profile-picture" alt="profile" src={profilepic} />
           <div className="banner-text">
-            <h1>Full Stack Web Developer</h1>
+            <h1>Full Stack Web & Software Developer</h1>
             <hr />
             <p>
               Javascript | React | NodeJS | Express | MongoDB | HTML & CSS |
