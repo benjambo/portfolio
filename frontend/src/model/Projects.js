@@ -23,145 +23,145 @@ export class Projects extends Component {
       return (
         <div className="projects-grid">
           {/* MovieSurfer */}
-          <Card className='cards' shadow={3} style={{ margin: 'auto' }}>
-              <CardTitle
-                style={{
-                  color: '#fff',
-                  height: '176px',
-                  background:
-                    'url(https://images.pexels.com/photos/965625/pexels-photo-965625.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1300) center / cover',
-                }}
+          <Card className="cards" shadow={3} style={{ margin: 'auto' }}>
+            <CardTitle
+              style={{
+                color: '#fff',
+                height: '176px',
+                background:
+                  'url(https://images.pexels.com/photos/965625/pexels-photo-965625.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1300) center / cover',
+              }}
+            >
+              MovieSurfer
+            </CardTitle>
+            <CardText style={{ color: 'black' }}>
+              MovieSurfer is a project I did at school with a team. The idea was
+              to create a website to gather all movies in different theaters to
+              one place. MovieSurfer's goal is to bring the prices down on movie
+              tickets and end the monopoly position Finnkino has
+            </CardText>
+            <CardActions border>
+              <Button
+                target="_blank"
+                href="https://github.com/benjambo/MovieSurfer"
               >
-                MovieSurfer
-              </CardTitle>
-              <CardText style={{ color: 'black' }}>
-                MovieSurfer is a project I did at school with a team. The idea
-                was to create a website to gather all movies in different
-                theaters to one place. MovieSurfer's goal is to bring the prices
-                down on movie tickets and end the monopoly position Finnkino has
-              </CardText>
-              <CardActions border>
-                <Button
-                  target="_blank"
-                  href="https://github.com/benjambo/MovieSurfer"
-                >
-                  GitHub
-                </Button>
-                <Button
-                  target="_blank"
-                  href="https://moviesurfer-app.herokuapp.com"
-                >
-                  Demo
-                </Button>
-              </CardActions>
-              <CardMenu style={{ color: '#fff' }}>
-                <IconButton name="share" />
-              </CardMenu>
+                GitHub
+              </Button>
+              <Button
+                target="_blank"
+                href="https://moviesurfer-app.herokuapp.com"
+              >
+                Demo
+              </Button>
+            </CardActions>
+            <CardMenu style={{ color: '#fff' }}>
+              <IconButton name="share" />
+            </CardMenu>
           </Card>
           <br />
           {/* Perfiction */}
-          <Card className='cards' shadow={3} style={{ margin: 'auto' }}>
-              <CardTitle
-                style={{
-                  color: '#fff',
-                  height: '176px',
-                  background:
-                    'url(https://images.pexels.com/photos/9186/food-beans-coffee-drink.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500) center / cover',
-                }}
+          <Card className="cards" shadow={3} style={{ margin: 'auto' }}>
+            <CardTitle
+              style={{
+                color: '#fff',
+                height: '176px',
+                background:
+                  'url(https://images.pexels.com/photos/9186/food-beans-coffee-drink.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500) center / cover',
+              }}
+            >
+              Perfiction
+            </CardTitle>
+            <CardText style={{ color: 'black' }}>
+              Perfiction is an enthusiastic coffee website where the idea is to
+              promote a coffeeshop as a brand and sell their products. This
+              project was my first time using React.
+            </CardText>
+            <CardActions border>
+              <Button
+                target="_blank"
+                href="https://github.com/benjambo/Perfiction"
               >
-                Perfiction
-              </CardTitle>
-              <CardText style={{ color: 'black' }}>
-                Perfiction is an enthusiastic coffee website where the idea is
-                to promote a coffeeshop as a brand and sell their products. This
-                project was my first time using React.
-              </CardText>
-              <CardActions border>
-                <Button
-                  target="_blank"
-                  href="https://github.com/benjambo/Perfiction"
-                >
-                  GitHub
-                </Button>
-                <Button
-                  target="_blank"
-                  href="https://perfiction.herokuapp.com/home"
-                >
-                  Demo
-                </Button>
-              </CardActions>
-              <CardMenu style={{ color: '#fff' }}>
-                <IconButton name="share" />
-              </CardMenu>
+                GitHub
+              </Button>
+              <Button
+                target="_blank"
+                href="https://perfiction.herokuapp.com/home"
+              >
+                Demo
+              </Button>
+            </CardActions>
+            <CardMenu style={{ color: '#fff' }}>
+              <IconButton name="share" />
+            </CardMenu>
           </Card>
           <br />
           {/* My Portfolio */}
-          <Card className='cards' shadow={3} style={{ margin: 'auto' }}>
-              <CardTitle
-                style={{
-                  color: '#fff',
-                  height: '176px',
-                  background:
-                    'url(https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) center / cover',
-                }}
+          <Card className="cards" shadow={3} style={{ margin: 'auto' }}>
+            <CardTitle
+              style={{
+                color: '#fff',
+                height: '176px',
+                background:
+                  'url(https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) center / cover',
+              }}
+            >
+              My Portfolio
+            </CardTitle>
+            <CardText style={{ color: 'black' }}>
+              This is a project I created by myself to make myself and portfolio
+              of all my work.
+            </CardText>
+            <CardActions border>
+              <Button
+                target="_blank"
+                href="https://github.com/benjambo/Portfolio"
               >
-                My Portfolio
-              </CardTitle>
-              <CardText style={{ color: 'black' }}>
-                This is a project I created by myself to make myself and
-                portfolio of all my work.
-              </CardText>
-              <CardActions border>
-                <Button
-                  target="_blank"
-                  href="https://github.com/benjambo/Portfolio"
-                >
-                  GitHub
-                </Button>
-                <Button
-                  target="_blank"
-                  href="https://benjambo.github.io/Portfolio"
-                >
-                  Demo
-                </Button>
-              </CardActions>
-              <CardMenu style={{ color: '#fff' }}>
-                <IconButton name="share" />
-              </CardMenu>
+                GitHub
+              </Button>
+              <Button
+                target="_blank"
+                href="https://benjambo.github.io/Portfolio"
+              >
+                Demo
+              </Button>
+            </CardActions>
+            <CardMenu style={{ color: '#fff' }}>
+              <IconButton name="share" />
+            </CardMenu>
           </Card>
           <br />
           {/* Cup O'Roast */}
-          <Card className='cards' shadow={3} style={{ margin: 'auto' }}>
-              <CardTitle
-                style={{
-                  color: '#fff',
-                  height: '176px',
-                  background:
-                    'url(https://images.pexels.com/photos/982612/pexels-photo-982612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) center / cover',
-                }}
+          <Card className="cards" shadow={3} style={{ margin: 'auto' }}>
+            <CardTitle
+              style={{
+                color: '#fff',
+                height: '176px',
+                background:
+                  'url(https://images.pexels.com/photos/982612/pexels-photo-982612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) center / cover',
+              }}
+            >
+              Cup O'Roast
+            </CardTitle>
+            <CardText style={{ color: 'black' }}>
+              Cup O'Roast is the very first project that I took part in.
+            </CardText>
+            <CardActions border>
+              <Button
+                target="_blank"
+                href="https://github.com/Jepu32/ProjectCoffee"
               >
-                Cup O'Roast
-              </CardTitle>
-              <CardText style={{ color: 'black' }}>
-                Cup O'Roast is the very first project that I took part in.
-              </CardText>
-              <CardActions border>
-                <Button
-                  target="_blank"
-                  href="https://github.com/Jepu32/ProjectCoffee"
-                >
-                  GitHub
-                </Button>
-                <Button
-                  target="_blank"
-                  href="http://users.metropolia.fi/~benjambo/Projekti/Coffee.html"
-                >
-                  Demo
-                </Button>
-              </CardActions>
-              <CardMenu style={{ color: '#fff' }}>
-                <IconButton name="share" />
-              </CardMenu>
+                GitHub
+              </Button>
+              <Button
+                target="_blank"
+                href="http://users.metropolia.fi/~benjambo/Projekti/Coffee.html"
+              >
+                Demo
+              </Button>
+            </CardActions>
+            <CardMenu style={{ color: '#fff' }}>
+              <IconButton name="share" />
+            </CardMenu>
           </Card>
           <br />
         </div>
@@ -170,40 +170,37 @@ export class Projects extends Component {
       return (
         <div>
           {/* iBeet */}
-          <Card className='cards' shadow={3} style={{ margin: 'auto' }}>
-              <CardTitle
-                style={{
-                  color: '#fff',
-                  height: '176px',
-                  background:
-                    'url(https://images.pexels.com/photos/221210/pexels-photo-221210.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) center / cover',
-                }}
+          <Card className="cards" shadow={3} style={{ margin: 'auto' }}>
+            <CardTitle
+              style={{
+                color: '#fff',
+                height: '176px',
+                background:
+                  'url(https://images.pexels.com/photos/221210/pexels-photo-221210.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) center / cover',
+              }}
+            >
+              iBeet
+            </CardTitle>
+            <CardText style={{ color: 'black' }}>
+              iBeet is an Android software built with Android Studio and Java.
+              The application is an fitness app that counts your calories based
+              on you weight, height and gender and tracks your activity e.g.
+              your jogging trip
+            </CardText>
+            <CardActions border>
+              <Button target="_blank" href="https://github.com/benjambo/iBeet">
+                GitHub
+              </Button>
+              <Button
+                target="_blank"
+                href="https://drive.google.com/open?id=1OKzLJIzBJRLKhQ6Vbz1Wsp1wR-lX65tp"
               >
-                iBeet
-              </CardTitle>
-              <CardText style={{ color: 'black' }}>
-                iBeet is an Android software built with Android Studio and Java.
-                The application is an fitness app that counts your calories
-                based on you weight, height and gender and tracks your activity
-                e.g. your jogging trip
-              </CardText>
-              <CardActions border>
-                <Button
-                  target="_blank"
-                  href="https://github.com/benjambo/iBeet"
-                >
-                  GitHub
-                </Button>
-                <Button
-                  target="_blank"
-                  href="https://drive.google.com/open?id=1OKzLJIzBJRLKhQ6Vbz1Wsp1wR-lX65tp"
-                >
-                  Demo
-                </Button>
-              </CardActions>
-              <CardMenu style={{ color: '#fff' }}>
-                <IconButton name="share" />
-              </CardMenu>
+                Demo
+              </Button>
+            </CardActions>
+            <CardMenu style={{ color: '#fff' }}>
+              <IconButton name="share" />
+            </CardMenu>
           </Card>
           <br />
         </div>
@@ -251,39 +248,39 @@ export class Projects extends Component {
       return (
         <div>
           {/* Sumwan The Game */}
-          <Card className='cards' shadow={3} style={{ margin: 'auto' }}>
-              <CardTitle
-                style={{
-                  color: '#fff',
-                  height: '176px',
-                  background:
-                    'url(https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) center / cover',
-                }}
+          <Card className="cards" shadow={3} style={{ margin: 'auto' }}>
+            <CardTitle
+              style={{
+                color: '#fff',
+                height: '176px',
+                background:
+                  'url(https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) center / cover',
+              }}
+            >
+              Sumwan The Game
+            </CardTitle>
+            <CardText style={{ color: 'black' }}>
+              Sumwan is the first game I was apart of. We built a game using
+              Unity and C#. It's an adventure game where you're supposed to find
+              Sumwan's (The chraracter's) lost socks in a maze.
+            </CardText>
+            <CardActions border>
+              <Button
+                target="_blank"
+                href="https://trello.com/b/BzLJ8w88/sumwans-socks"
               >
-                Sumwan The Game
-              </CardTitle>
-              <CardText style={{ color: 'black' }}>
-                Sumwan is the first game I was apart of. We built a game using
-                Unity and C#. It's an adventure game where you're supposed to
-                find Sumwan's (The chraracter's) lost socks in a maze.
-              </CardText>
-              <CardActions border>
-                <Button
-                  target="_blank"
-                  href="https://trello.com/b/BzLJ8w88/sumwans-socks"
-                >
-                  Trello
-                </Button>
-                <Button
-                  target="_blank"
-                  href="https://drive.google.com/open?id=1OKzLJIzBJRLKhQ6Vbz1Wsp1wR-lX65tp"
-                >
-                  Demo
-                </Button>
-              </CardActions>
-              <CardMenu style={{ color: '#fff' }}>
-                <IconButton name="share" />
-              </CardMenu>
+                Trello
+              </Button>
+              <Button
+                target="_blank"
+                href="https://drive.google.com/open?id=1OKzLJIzBJRLKhQ6Vbz1Wsp1wR-lX65tp"
+              >
+                Demo
+              </Button>
+            </CardActions>
+            <CardMenu style={{ color: '#fff' }}>
+              <IconButton name="share" />
+            </CardMenu>
           </Card>
           <br />
         </div>
@@ -300,9 +297,15 @@ export class Projects extends Component {
           onChange={(tabId) => this.setState({ activeTab: tabId })}
           ripple
         >
-          <Tab className='tabs'>React & Javascript</Tab>
-          <Tab className='tabs'>Java</Tab>
-          <Tab className='tabs'>Unity</Tab>
+          <Tab className="tabs">
+            <b>React & Javascript</b>
+          </Tab>
+          <Tab className="tabs">
+            <b>Java</b>
+          </Tab>
+          <Tab className="tabs">
+            <b>Unity</b>
+          </Tab>
         </Tabs>
 
         <div className="grid-width">
