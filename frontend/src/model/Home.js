@@ -46,7 +46,7 @@ export const Home = () => {
               {/* Facebook */}
               <a
                 target="_blank"
-                href="https://facebook.com/ben.schelling"
+                href="https://facebook.com/beni.schelling"
                 rel="noopener noreferrer"
               >
                 <i className="fab fa-facebook-square" aria-hidden="true" />
