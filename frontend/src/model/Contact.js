@@ -8,7 +8,7 @@ export const Contact = () => {
       <div className="contact-body">
         <div className="contact-grid">
           <div className="contact-div">
-            <h2 style={{ fontFamily: 'Montserrat' }}>Benjamin Bowo</h2>
+            <h2 style={{ fontFamily: 'Montserrat' }}>Benjamin Schelling</h2>
             <img
               src={contactpic}
               alt="avatar"
@@ -39,7 +39,7 @@ export const Contact = () => {
                 </ListItem>
                 <ListItem>
                   <ListItemContent icon="email" style={{ fontSize: '3vh' }}>
-                    ben.bowo@gmail.com
+                    beni.schelling@gmail.com
                   </ListItemContent>
                 </ListItem>
                 <ListItem>

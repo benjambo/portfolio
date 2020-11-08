@@ -11,24 +11,44 @@ html {
 }
 
 /* Navigation Bar */
-.mdl-layout__title,
-.mdl-layout-title {
-  font-family: 'Montserrat', sans-serif !important;
-  color: black !important;
-}
 
-.demo-big-content {
-  width: 100%;
-  position: fixed;
-  z-index: 2;
+form {
+  width: auto;
 }
-
-.mdl-layout__drawer {
-  position: fixed !important;
+button {
+  margin: 1vh;
 }
-
-.mdl-layout__obfuscator {
-  position: fixed !important;
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.navbar-default,
+.collapsed {
+  border-color: #3e444a !important;
+}
+.navbar-default,
+.toggle {
+  background-color: white !important;
+}
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: white !important;
+  margin: 2vh 2vw 2vh 2vw !important;
+}
+.navbar-brand:hover,
+.navbar-nav:hover .nav-link:hover {
+  color: #474747 !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: white !important;
+}
+.navbar-light:hover .navbar-nav:hover .nav-link:hover {
+  color: #474747 !important;
+}
+.navbar-light .navbar-brand {
+  color: white !important;
+}
+.navbar-light:hover .navbar-brand:hover {
+  color: #474747 !important;
 }
 
 /* Home page */
@@ -51,7 +71,7 @@ html {
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding: 8vh 0vh 3vh 0vh;
+  padding: 12vh 0vh 3vh 0vh;
 }
 
 .home-second-grid {
@@ -118,10 +138,12 @@ html {
 
 .cards {
   transition: transform 0.5s;
+  margin-top: 2vh !important;
+  font-weight: bold;
 }
 
-.cards {
-  font-weight: bold;
+.card-text {
+  height: 13.42vh;
 }
 
 .cards:hover {
@@ -219,19 +241,18 @@ html {
   text-align: center;
   justify-content: center;
   padding: 10vh;
-  width: 33%;
+  width: 45%;
 }
 
 .resume-column-right {
   padding: 2vh;
   border-radius: 10px;
   margin: 8vh;
-  width: 66%;
+  width: 55%;
   color: white;
-  background: #A8A8A8;
-  background: -webkit-linear-gradient(to right, #A8A8A8, #404040);
-  background: linear-gradient(to right, #A8A8A8, #404040);
-
+  background: #a8a8a8;
+  background: -webkit-linear-gradient(to right, #a8a8a8, #404040);
+  background: linear-gradient(to right, #a8a8a8, #404040);
 }
 
 .resume-grid h5 {
@@ -410,7 +431,6 @@ html {
   }
 }
 
-
 /*
 #home {
   background: rgba(0, 0, 0, 0.6);
@@ -445,9 +465,9 @@ html {
     height: 50px !important;
   }*/
 
-  /* Home Page */
+/* Home Page */
 
-  /*#home {
+/*#home {
   background: rgba(0, 0, 0, 0.6);
   padding: 2vh;
   margin: 0 4vh;

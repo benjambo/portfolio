@@ -22,13 +22,12 @@ export const Resume = () => {
           </h4>
           <hr style={{ borderTop: '1px solid black' }}></hr>
           <p>
-              I’m a 23 year old software engineering student. I have a high
-              interest in IT and love working among technology. During my
-              studies, I have got to learn Java, JavaScript, ReactJS, SQL, HTML
-              and CSS on strong bases and minor knowledge in C and C#. I want to
-              start working in an IT company to promote my knowledge and
-              experience. I’m determined on developing myself and on learning
-              new skills.
+            I’m a 23 year old software engineering student. I have a high
+            interest in IT and love working among technology. During my studies,
+            I have got to learn Java, JavaScript, ReactJS, SQL, HTML and CSS on
+            strong bases and minor knowledge in C and C#. I want to start
+            working in an IT company to promote my knowledge and experience. I’m
+            determined on developing myself and on learning new skills.
           </p>
           <hr style={{ borderTop: '1px solid black' }}></hr>
           <h5>Phone</h5>
@@ -36,7 +35,7 @@ export const Resume = () => {
           <h5>Email</h5>
           <p>beni.schelling@gmail.com</p>
           <h5>Address</h5>
-          <p>Uutiskatu 3 C 136, Helsinki</p>
+          <p>Uutiskatu, Helsinki</p>
           <hr style={{ borderTop: '1px solid black' }}></hr>
           <div className="social-links-resume">
             {/* Github */}
@@ -116,10 +115,10 @@ export const Resume = () => {
           <h3 style={{ fontFamily: 'Montserrat' }}>Work Experience</h3>
           <Experiences
             startYear={'10/2019'}
-            endYear={'present'}
-            place={'IT Support, Metropolia Ammattikorkeakoulu Oy'}
+            endYear={'08/2020'}
+            place={'IT Support Group Leader, Metropolia Ammattikorkeakoulu Oy'}
             description={
-              'Network configuration, IT Installations and Customer Service'
+              'Leading a group of trainees and managing Network configuration, Software managment, IT Installations and Customer Service'
             }
           />
           <br />
@@ -152,7 +151,7 @@ export const Resume = () => {
           >
             <Random
               text="Java • JavaScript • ReactJS • SQL • HTML & CSS"
-              effect="pop"
+              effect="color"
               effectChange={0.6}
               effectDuration={2}
             />

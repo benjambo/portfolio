@@ -1,73 +1,70 @@
-import React from 'react'
-import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl'
+import React, { useState } from 'react'
+import { Nav, Navbar } from 'react-bootstrap'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
-export const NavigationBar = () => {
+const NavigationBar = () => {
+  const [expanded, setExpanded] = useState(false)
   return (
-    <div className="demo-big-content">
-      <Layout>
-        <Header
-          className="header-color"
-          title={
-            <AnchorLink
-              style={{
-                textDecoration: 'none',
-                color: 'white',
-                fontSize: 'smaller',
-              }}
-              offset="100"
-              href="#home"
-            >
-              Benjamin Schelling
-            </AnchorLink>
-          }
-          scroll
-        >
-          <Navigation>
-            <AnchorLink offset="100" href="#home">
-              Home
-            </AnchorLink>
-            <AnchorLink href="#projects">Projects</AnchorLink>
-            <AnchorLink href="#resume">Resume</AnchorLink>
-          </Navigation>
-        </Header>
-        <Drawer
-          title={
-            <AnchorLink
-              style={{
-                textDecoration: 'none',
-                color: 'black',
-                fontSize: 'smaller',
-              }}
-              offset="100"
-              href="#home"
-            >
-              My Portfolio
-            </AnchorLink>
-          }
-        >
-          <Navigation>
-            <AnchorLink
-              offset="100"
-              href="#home"
-              style={{
-                color: 'black',
-              }}
-            >
-              Home
-            </AnchorLink>
-            <AnchorLink style={{ color: 'black' }} href="#projects">
-              Projects
-            </AnchorLink>
-            <AnchorLink style={{ color: 'black' }} href="#resume">
-              Resume
-            </AnchorLink>
-          </Navigation>
-        </Drawer>
-        <Content>
-          <div className="page-content" />
-        </Content>
-      </Layout>
+    <div>
+      <Navbar expand="lg" fixed="top" variant="dark" expanded={expanded}>
+        <Navbar.Brand href="#/">
+          <AnchorLink
+            style={{
+              textDecoration: 'none',
+              color: 'white',
+            }}
+            offset="100"
+            href="#home"
+          >
+            Benjamin Schelling
+          </AnchorLink>
+        </Navbar.Brand>
+        <Navbar.Toggle
+          area-controls="basic-navbar-nav"
+          onClick={() => setExpanded(expanded ? false : 'expanded')}
+        />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ml-auto">
+            <Nav.Link onClick={() => setExpanded(false)}>
+              <AnchorLink
+                style={{
+                  textDecoration: 'none',
+                  color: 'white',
+                }}
+                offset="100"
+                href="#home"
+              >
+                Home
+              </AnchorLink>
+            </Nav.Link>
+            <Nav.Link onClick={() => setExpanded(false)}>
+              <AnchorLink
+                style={{
+                  textDecoration: 'none',
+                  color: 'white',
+                }}
+                offset="100"
+                href="#projects"
+              >
+                Projects
+              </AnchorLink>
+            </Nav.Link>
+            <Nav.Link onClick={() => setExpanded(false)}>
+              <AnchorLink
+                style={{
+                  textDecoration: 'none',
+                  color: 'white',
+                }}
+                offset="100"
+                href="#resume"
+              >
+                Resume
+              </AnchorLink>
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     </div>
   )
 }
+export default NavigationBar

@@ -10,6 +10,7 @@ import {
   IconButton,
   CardText,
 } from 'react-mdl'
+import Newsy from '../assets/Newsy.png'
 //import { Spring } from 'react-spring/renderprops'
 
 export class Projects extends Component {
@@ -22,6 +23,78 @@ export class Projects extends Component {
     if (this.state.activeTab === 0) {
       return (
         <div className="projects-grid">
+          {/* Newsy */}
+          <Card className="cards" shadow={3} style={{ margin: 'auto' }}>
+            <CardTitle
+              style={{
+                color: '#fff',
+                height: '176px',
+                background:
+                  'url(https://images.pexels.com/photos/6335/man-coffee-cup-pen.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center / cover',
+              }}
+            >
+              Newsy
+            </CardTitle>
+            <CardText
+              className="card-text"
+              style={{ color: 'black', fontWeight: 'bold' }}
+            >
+              Newsy is a news website that collects news all around the web and
+              brings it in one place. Newsy is powered by NewsAPI
+            </CardText>
+            <CardActions border>
+              <Button target="_blank" href="https://github.com/benjambo/Newsy">
+                GitHub
+              </Button>
+              <Button
+                target="_blank"
+                href="https://benjambo.github.io/Newsy/#/"
+              >
+                Demo
+              </Button>
+            </CardActions>
+            <CardMenu style={{ color: '#fff' }}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+          {/* Bikester */}
+          <Card className="cards" shadow={3} style={{ margin: 'auto' }}>
+            <CardTitle
+              style={{
+                color: '#fff',
+                height: '176px',
+                background:
+                  'url(https://images.pexels.com/photos/351300/pexels-photo-351300.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center / cover',
+              }}
+            >
+              Bikester
+            </CardTitle>
+            <CardText
+              className="card-text"
+              style={{ color: 'black', fontWeight: 'bold' }}
+            >
+              Bikester is a project created for everyone that use Alepa-fillari.
+              It uses an open API to get the information needed and shows it to
+              the user.
+            </CardText>
+            <CardActions border>
+              <Button
+                target="_blank"
+                href="https://github.com/benjambo/BikeApp"
+              >
+                GitHub
+              </Button>
+              <Button
+                target="_blank"
+                href="https://benjambo.github.io/BikeApp/#/"
+              >
+                Demo
+              </Button>
+            </CardActions>
+            <CardMenu style={{ color: '#fff' }}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
           {/* MovieSurfer */}
           <Card className="cards" shadow={3} style={{ margin: 'auto' }}>
             <CardTitle
@@ -34,7 +107,10 @@ export class Projects extends Component {
             >
               MovieSurfer
             </CardTitle>
-            <CardText style={{ color: 'black', fontWeight: 'bold' }}>
+            <CardText
+              className="card-text"
+              style={{ color: 'black', fontWeight: 'bold' }}
+            >
               MovieSurfer is a project I did at school with a team. The idea was
               to create a website to gather all movies in different theaters to
               one place. MovieSurfer's goal is to bring the prices down on movie
@@ -59,77 +135,7 @@ export class Projects extends Component {
             </CardMenu>
           </Card>
           <br />
-          {/* Perfiction */}
-          <Card className="cards" shadow={3} style={{ margin: 'auto' }}>
-            <CardTitle
-              style={{
-                color: '#fff',
-                height: '176px',
-                background:
-                  'url(https://images.pexels.com/photos/9186/food-beans-coffee-drink.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500) center / cover',
-              }}
-            >
-              Perfiction
-            </CardTitle>
-            <CardText style={{ color: 'black', fontWeight: 'bold' }}>
-              Perfiction is an enthusiastic coffee website where the idea is to
-              promote a coffeeshop as a brand and sell their products. This
-              project was my first time using React.
-            </CardText>
-            <CardActions border>
-              <Button
-                target="_blank"
-                href="https://github.com/benjambo/Perfiction"
-              >
-                GitHub
-              </Button>
-              <Button
-                target="_blank"
-                href="https://perfiction.herokuapp.com/home"
-              >
-                Demo
-              </Button>
-            </CardActions>
-            <CardMenu style={{ color: '#fff' }}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-          <br />
-          {/* My Portfolio */}
-          <Card className="cards" shadow={3} style={{ margin: 'auto' }}>
-            <CardTitle
-              style={{
-                color: '#fff',
-                height: '176px',
-                background:
-                  'url(https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) center / cover',
-              }}
-            >
-              My Portfolio
-            </CardTitle>
-            <CardText style={{ color: 'black', fontWeight: 'bold' }}>
-              This is a project I created by myself to make myself and portfolio
-              of all my work.
-            </CardText>
-            <CardActions border>
-              <Button
-                target="_blank"
-                href="https://github.com/benjambo/Portfolio"
-              >
-                GitHub
-              </Button>
-              <Button
-                target="_blank"
-                href="https://benjambo.github.io/Portfolio"
-              >
-                Demo
-              </Button>
-            </CardActions>
-            <CardMenu style={{ color: '#fff' }}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-          <br />
+
           {/* Cup O'Roast */}
           <Card className="cards" shadow={3} style={{ margin: 'auto' }}>
             <CardTitle
@@ -142,7 +148,10 @@ export class Projects extends Component {
             >
               Cup O'Roast
             </CardTitle>
-            <CardText style={{ color: 'black', fontWeight: 'bold' }}>
+            <CardText
+              className="card-text"
+              style={{ color: 'black', fontWeight: 'bold' }}
+            >
               Cup O'Roast is the very first project that I took part in.
             </CardText>
             <CardActions border>
@@ -181,7 +190,10 @@ export class Projects extends Component {
             >
               iBeet
             </CardTitle>
-            <CardText style={{ color: 'black', fontWeight: 'bold' }}>
+            <CardText
+              className="card-text"
+              style={{ color: 'black', fontWeight: 'bold' }}
+            >
               iBeet is an Android software built with Android Studio and Java.
               The application is an fitness app that counts your calories based
               on you weight, height and gender and tracks your activity e.g.
@@ -193,7 +205,7 @@ export class Projects extends Component {
               </Button>
               <Button
                 target="_blank"
-                href="https://drive.google.com/open?id=1OKzLJIzBJRLKhQ6Vbz1Wsp1wR-lX65tp"
+                href="https://drive.google.com/file/d/1uo0Kev8sFCPjIgD1F6f4zxuuvpxeOXIt/view?usp=sharing"
               >
                 Demo
               </Button>
@@ -259,7 +271,10 @@ export class Projects extends Component {
             >
               Sumwan The Game
             </CardTitle>
-            <CardText style={{ color: 'black', fontWeight: 'bold' }}>
+            <CardText
+              className="card-text"
+              style={{ color: 'black', fontWeight: 'bold' }}
+            >
               Sumwan is the first game I was apart of. We built a game using
               Unity and C#. It's an adventure game where you're supposed to find
               Sumwan's (The chraracter's) lost socks in a maze.
