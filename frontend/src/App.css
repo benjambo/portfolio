@@ -53,33 +53,85 @@ button {
 
 /* Home page */
 
-.header-color {
-  /*background: #000000;
-  background: -webkit-linear-gradient(to right, #434343, #000000);
-  background: linear-gradient(to right, #434343, #000000);
-  background: #ec6f66;
-  background: -webkit-linear-gradient(to right, #f3a183, #ec6f66);
-  background: linear-gradient(to right, #f3a183, #ec6f66);*/
-  background: rgba(0, 0, 0, 0.6) !important;
+.showcase {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
 }
 
-.home-grid {
-  /*background: #000000;
-  background: -webkit-linear-gradient(to right, #434343, #000000);
-  background: linear-gradient(to right, #434343, #000000);*/
-  background: url('./assets/blur.jpg') no-repeat;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  padding: 12vh 0vh 3vh 0vh;
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.video-container:after {
+  content: '';
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+}
+
+.video-content {
+  z-index: 2;
+  border-radius: 16px;
+  padding: 2vh;
+}
+
+.video-content h1 {
+  margin: 2vh;
+}
+
+.video-content p {
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff !important;
+  margin-top: 60px;
+  opacity: 0.6;
+  transition: 0.4s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: 0.4s ease-in-out;
+}
+
+.btn i {
+  font-size: 5em;
 }
 
 .home-second-grid {
-  margin: 3vh 3vh 3vh 3vh;
+  margin: auto;
 }
 
 .profile-picture {
   width: 25vh;
+  border-radius: 50px;
 }
 
 .banner-text {
@@ -121,8 +173,8 @@ button {
 .qoutes {
   text-align: center;
   margin: auto;
+  padding-top: 2vh;
   font-size: 30px;
-  margin: 2vh 5vh 2vh 5vh;
   line-height: 1em;
 }
 
@@ -250,9 +302,7 @@ button {
   margin: 8vh;
   width: 55%;
   color: white;
-  background: #a8a8a8;
-  background: -webkit-linear-gradient(to right, #a8a8a8, #404040);
-  background: linear-gradient(to right, #a8a8a8, #404040);
+  background: #cd9e88;
 }
 
 .resume-grid h5 {
@@ -298,6 +348,10 @@ button {
   }
 
   /* Home Page */
+
+  .profile-picture {
+    display: none;
+  }
 
   .demo-big-content {
     position: static;
