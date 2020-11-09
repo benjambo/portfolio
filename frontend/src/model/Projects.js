@@ -10,7 +10,6 @@ import {
   IconButton,
   CardText,
 } from 'react-mdl'
-import Newsy from '../assets/Newsy.png'
 //import { Spring } from 'react-spring/renderprops'
 
 export class Projects extends Component {

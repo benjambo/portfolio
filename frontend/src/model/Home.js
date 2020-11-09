@@ -1,5 +1,5 @@
 import React from 'react'
-import profilepic from '../assets/profilepic2.jpg'
+import profilepic from '../assets/profilepic.jpg'
 import { Resume } from './Resume'
 import { Projects } from './Projects'
 import { Spring } from 'react-spring/renderprops'
