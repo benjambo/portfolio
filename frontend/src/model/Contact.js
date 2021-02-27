@@ -1,6 +1,6 @@
 import React from 'react'
 import { List, ListItem, ListItemContent } from 'react-mdl'
-import contactpic from '../assets/contactpic.jpeg'
+import contactpic from '../assets/contactpic.jpg'
 
 export const Contact = () => {
   return (

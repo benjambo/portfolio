@@ -1,5 +1,5 @@
 import React from 'react'
-import contactpic from '../assets/contactpic.jpeg'
+import contactpic from '../assets/profilepic.jpg'
 import { Experiences } from '../components/Experiences'
 import { Random } from 'react-animated-text'
 import { FadeInSection } from '../components/FadeInSection'
@@ -13,7 +13,7 @@ export const Resume = () => {
             <img
               src={contactpic}
               alt="profile"
-              style={{ height: '200px', borderRadius: '10px' }}
+              style={{ height: '200px', borderRadius: '50px' }}
             />
           </div>
           <h2 style={{ fontFamily: 'Montserrat' }}>Benjamin Schelling</h2>
@@ -31,11 +31,25 @@ export const Resume = () => {
           </p>
           <hr style={{ borderTop: '1px solid black' }}></hr>
           <h5>Phone</h5>
-          <p>+358 40 9656771</p>
+          <a target="_blank" rel="noopener noreferrer" href="tel:+358409656771">
+            +358 40 9656771
+          </a>
           <h5>Email</h5>
-          <p>beni.schelling@gmail.com</p>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="mailto:beni.schelling@gmail.com"
+          >
+            beni.schelling@gmail.com
+          </a>
           <h5>Address</h5>
-          <p>Uutiskatu, Helsinki</p>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.google.com/maps/place/Uutiskatu+3,+00240+Helsinki/@60.2036909,24.9201223,19.55z/data=!4m5!3m4!1s0x469209ed15a1bbd7:0x56ba182486f5d7a!8m2!3d60.203713!4d24.920196"
+          >
+            Uutiskatu, Helsinki
+          </a>
           <hr style={{ borderTop: '1px solid black' }}></hr>
           <div className="social-links-resume">
             {/* Github */}
@@ -101,7 +115,7 @@ export const Resume = () => {
             startYear={'07/2016'}
             endYear={'06/2017'}
             place={'The Finnish Defence Forces'}
-            description={'Corpral'}
+            description={'Corporal'}
           />
           <br />
           <Experiences
@@ -149,12 +163,7 @@ export const Resume = () => {
               margin: '0',
             }}
           >
-            <Random
-              text="Java • JavaScript • ReactJS • SQL • HTML & CSS"
-              effect="color"
-              effectChange={0.6}
-              effectDuration={2}
-            />
+            Java • JavaScript • ReactJS • SQL • HTML & CSS
           </h5>
         </div>
       </div>

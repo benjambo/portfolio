@@ -7,7 +7,7 @@ const NavigationBar = () => {
   return (
     <div>
       <Navbar expand="lg" fixed="top" variant="dark" expanded={expanded}>
-        <Navbar.Brand href="#/">
+        <Navbar.Brand>
           <AnchorLink
             style={{
               textDecoration: 'none',
@@ -55,7 +55,7 @@ const NavigationBar = () => {
                   textDecoration: 'none',
                   color: 'white',
                 }}
-                offset="100"
+                offset="80"
                 href="#resume"
               >
                 Resume

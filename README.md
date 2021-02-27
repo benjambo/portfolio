@@ -30,7 +30,7 @@ npm start      #For scripts start
 
 ## Author:
 
-👤 **Benjamin Bowo**
+👤 **Benjamin Schelling**
 
 - Github: [@benjambo](https://github.com/benjambo)
 

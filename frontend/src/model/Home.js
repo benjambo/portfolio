@@ -1,5 +1,5 @@
 import React from 'react'
-import profilepic from '../assets/profilepic.jpg'
+//import profilepic from '../assets/profilepic.jpg'
 import { Resume } from './Resume'
 import { Projects } from './Projects'
 import { Spring } from 'react-spring/renderprops'
@@ -9,7 +9,7 @@ import video from '../assets/coding.mp4'
 export const Home = () => {
   return (
     <div>
-      <div className="home">
+      <div className="home" id="home">
         <section className="showcase">
           <div className="video-container">
             <video autoPlay="autoplay" muted loop="loop" className="myVideo">
@@ -18,7 +18,7 @@ export const Home = () => {
           </div>
           <div className="video-content">
             <div className="banner-text">
-              <img className="profile-picture" alt="profile" src={profilepic} />
+              {/*<img className="profile-picture" alt="profile" src={profilepic} />*/}
               <h1>Full Stack Web & Software Developer</h1>
               <hr />
               <p>
@@ -68,7 +68,7 @@ export const Home = () => {
               offset={() => 100}
               href="#start"
             >
-              <i className="fas fa-arrow-circle-down"></i>
+              <i className="fas fa-angle-down"></i>
             </AnchorLink>
           </div>
         </section>
